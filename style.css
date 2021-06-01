@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ O Layout da pagina foi feito usando grid onde
+
+ MH = mainHeader
+ CT = content
+
+*/
+
+#layout{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 60px;
+  
+  grid-template-areas:
+  'MH'
+  'CT';
+
+  height: 100vh;
+}
+
+/* Estilos header */
+
+#mainHeader{
+  grid-area: MH;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #000;
+  color: #8b8b8b;
+}
+
+
+#mainHeader .header_Player{
+  display: flex;
+  justify-content: space-between;
+
+  width: 120px;
+}
+
+#mainHeader .header_Player i{
+  font-size: 30px;
+}
+
+#mainHeader .header_Logo{
+  width: 104px;
+  height: 40px;
+}
+
+#mainHeader .header_Navegation{
+  display: flex;
+  justify-content: space-between;
+  width: 437px;
+  text-decoration: none;
+}
+#mainHeader .header_Navegation a{
+  text-decoration: none;
+  color: #8b8b8b;
+}
+
+/* Estilos content */
+
+#content{
+  grid-area: CT;
+
+  background-color: #fff;
+}
+
