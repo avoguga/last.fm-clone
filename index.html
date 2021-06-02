@@ -6,19 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Last.fm</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <div id="layout">
     <div id="mainHeader">
-      <img src="asserts/images/player_default_album.430223706b14.png">
+      
       <div class="header_Player">
-        <i class="fas fa-backward"></i>
-        <i class="far fa-play-circle"></i>
-        <i class="fas fa-forward"></i>
+        <img src="asserts/images/player_default_album.430223706b14.png" alt="defaultAlbum">
+        <div>
+          <i class="fas fa-backward"></i>
+          <i id="play" class="far fa-play-circle"></i>
+          <i class="fas fa-forward"></i>
+          <i id="favorite" class="far fa-heart"></i>
+        </div>
       </div>
-      <img class="header_Logo" src="asserts/images/Lastfm_logo.svg">
+      <img class="header_Logo" src="asserts/images/Lastfm_logo.svg" alt="logoLast">
       <div class="header_Navegation">
         <a href="#" class=""><i class="fas fa-search"></i></a>
         <a href="#" class="">Home</a>
@@ -27,10 +33,9 @@
         <a href="#" class="">Charts</a>
         <a href="#" class="">Events</a>
         <a href="#" class="">Features</a>
-        <a href="#" class=""><i class="fas fa-user"></i></a>
+        <img class="user_Photo" src="asserts/images/user.svg" alt="userPhoto">
       </div>
     </div>
-    <div id="content"></div>
   </div>
 
 </body>

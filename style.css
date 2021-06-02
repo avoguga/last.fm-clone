@@ -36,16 +36,35 @@
   color: #8b8b8b;
 }
 
-
 #mainHeader .header_Player{
   display: flex;
   justify-content: space-between;
-
-  width: 120px;
+  align-items: center;
+  
 }
 
-#mainHeader .header_Player i{
+#mainHeader .header_Player div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 130px;
+  margin: 0 50px;
+}
+
+#mainHeader .header_Player div i{
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+#mainHeader .header_Player #play{
   font-size: 30px;
+  opacity: 0.5;
+}
+
+#mainHeader .header_Player #favorite{
+  font-size: 20px;
+  opacity: 0.5;
 }
 
 #mainHeader .header_Logo{
@@ -56,12 +75,18 @@
 #mainHeader .header_Navegation{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 437px;
   text-decoration: none;
 }
 #mainHeader .header_Navegation a{
+  font-family: Barlow, "Open Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;;
   text-decoration: none;
-  color: #8b8b8b;
+  color: #FFF;
+  opacity: 0.7;
+}
+#mainHeader .header_Navegation .user_Photo{
+  width: 40px;
 }
 
 /* Estilos content */
