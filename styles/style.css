@@ -144,12 +144,20 @@
   border-bottom: 5px solid #9900ff;
 }
 
-#content #cardArea{
+#content .main_Content{
+  display: flex;
+}
+
+#content .main_Content .left_Content_Side{
+  width: 70%;
+}
+
+#content .main_Content .left_Content_Side #cardArea{
   margin-top: 10px;
   margin-left: 100px;
 }
 
-#content #cardArea #card{
+#content .left_Content #cardArea #card{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 236px;
